@@ -1,5 +1,4 @@
-import Main from "./layouts/Main";
-
+import Main from "./layouts/components/Main";
 export default async function Home() {
 
 try{
@@ -7,7 +6,9 @@ try{
     const data = await fetch(ul);
     const res = await data.json();
     return (
+      <>
       <Main data={res} />
+      </>
     );
 } catch(error) {
   console.log(error);
