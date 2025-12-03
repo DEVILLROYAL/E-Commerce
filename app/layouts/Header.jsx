@@ -12,7 +12,7 @@ export default function Navbar() {
             <div className='border border-black  flex flex-col justify-center h-full rounded-full'>
               <SearchInput/>
             </div>
-            <div className='h-full w-auto flex gap-5'>
+            <div className='h-full border-2 border-black flex gap-5'>
               <div className="flex flex-col justify-center">
                 <ShoppingCart/>
               </div>
