@@ -5,19 +5,21 @@ import { ShoppingCart } from "lucide-react";
 export default function Navbar() {
   return (
     <>
-        <header className="w-full h-16 border flex flex-row gap-5 justify-between box-border p-3">
-            <div className="h-full w-max flex p-2 items-center ">
+        <header className="w-full h-16 border flex flex-row gap-5 justify-between box-border">
+          <div className="border-2 border-black flex flex-row gap-3">
+            <div className="h-full border-2 border-black w-max flex p-2 items-center ">
                 <p className='font-sans text-xl' >Whatbytes Store</p>
             </div>
             <div className='border border-black  flex flex-col justify-center h-full rounded-full'>
               <SearchInput/>
             </div>
-            <div className='h-full border-2 border-black flex gap-5'>
-              <div className="flex flex-col justify-center">
+            <div className='h-full border-2 border-black w-auto flex gap-5'>
+              <div className="flex flex-col border-2 border-black justify-center">
                 <ShoppingCart/>
               </div>
-              <Profile/>
+               <Profile/>
             </div>
+          </div>
         </header>
     </>
   )

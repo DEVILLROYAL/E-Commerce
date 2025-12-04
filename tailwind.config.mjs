@@ -22,3 +22,15 @@ export default {
   },
   plugins: [],
 };
+export const greenBrand = {
+primary: {
+light: "#86efac",
+DEFAULT: "#22c55e",
+dark: "#16a34a",
+},
+accent: {
+light: "#bef264",
+DEFAULT: "#84cc16",
+dark: "#65a30d",
+},
+};

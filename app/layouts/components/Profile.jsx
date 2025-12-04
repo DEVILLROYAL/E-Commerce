@@ -15,7 +15,7 @@ export default function Profile() {
     };
   },[]);
 
-  return (
+  return (  
     <>
      <div className="w-max h-full relative flex items-center p-2" ref={menuRef}>
         <button onClick={() => setIsOpen(!isOpen)}>
