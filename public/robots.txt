@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://thegreenleaf.store/sitemap.xml
+Host: https://thegreenleaf.store

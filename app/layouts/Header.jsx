@@ -8,9 +8,9 @@ export default function Navbar() {
         <header className="w-full h-16 flex border flex-row gap-5 justify-between box-border">
           <div className="flex m-2 w-full flex-row justify-between gap-3">
             <div className="flex justify-center items-center">
-                <p className='font-sans text-md' >Green Store</p>
+                <a href="/"><p className='font-sans text-xl text-green-400' >Green <span className="text-black">Store</span></p></a>
             </div>
-            <div className='border border-black  flex flex-col justify-center h-full rounded-full'>
+            <div className='border border-green-400 flex flex-col justify-center h-full rounded-full'>
               <SearchInput/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            
             </div>
             <div className='flex gap-2'>

@@ -1,37 +1,26 @@
-import { Facebook, Instagram, X, Youtube, Linkedin, Dribbble } from "lucide-react"
+import { Facebook, Instagram } from "lucide-react";
 
 export default function Footer() {
   return (
-    <>
-       <footer className="h-auto flex flex-col border border-black absolute bottom-0 justify-center">
-        <div className="flex justify-between">
-            <div className="flex items-center p-4" >
-                <p className='text-sm'>
-                    © {new Date().getFullYear()} WhatbytesStore. All rights reserved.
-                </p>
-            </div>
-            <div className='w-max flex flex-row gap-2 p-5 items-center ' >
-                <div className="cursor-pointer">
-                    <Facebook/>
-                </div>
-                <div className="cursor-pointer">
-                    <Instagram/>
-                </div>
-                <div className="cursor-pointer">
-                    <Dribbble/>
-                </div>
-                <div className="cursor-pointer">
-                    <X/>
-                </div>
-                <div className="cursor-pointer">
-                    <Youtube/>
-                </div>
-                <div className="cursor-pointerx">
-                    <Linkedin/>
-                </div>
-            </div>
+    <footer className="mt-auto w-full border-t p-3 flex flex-col">
+      <div className="flex justify-between items-center px-4 py-3">
+        <p className="text-sm">
+          © {new Date().getFullYear()} thegreenleaf. All rights reserved.
+        </p>
+
+        <div className="flex gap-3">
+          <a href="#" className="cursor-pointer">
+            <Facebook color="blue" size={19} />
+          </a>
+          <a
+            href="https://www.instagram.com/thegreenleafbly/"
+            target="_blank"
+            className="cursor-pointer"
+          >
+            <Instagram color="red" size={19} />
+          </a>
         </div>
-       </footer>
-    </>
-  )
+      </div>
+    </footer>
+  );
 }
