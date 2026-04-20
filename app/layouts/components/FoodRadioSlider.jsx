@@ -3,54 +3,55 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import {
-  Utensils,
-  Soup,
   Coffee,
   IceCream,
-  ScrollText,
+  Shirt,
+  Smartphone,
+  Sofa,
+  Sparkle,
 } from "lucide-react"; // icons
 import { useSwipeable } from "react-swipeable"; // swipe support
 
 export default function FoodRadioSlider() {
   const categories = [
     {
-      name: "Veg Meals",
-      icon: <Utensils size={20} />,
+      name: "Fashion",
+      icon: <Shirt size={20} />,
       images: [
-        "https://ik.imagekit.io/greenstore/Food%20Image/special-thali.jpg",
-        "https://ik.imagekit.io/greenstore/Food%20Image/simple-thali.jpg",
+        "#",
+        "#",
       ],
     },
     {
-      name: "Rice & Pulao",
-      icon: <Soup size={20} />,
+      name: "Home",
+      icon: <Sofa size={20} />,
       images: [
-        "https://ik.imagekit.io/greenstore/Food%20Image/matar-pulao.jpg",
-        "https://ik.imagekit.io/greenstore/Food%20Image/mini-thali.jpg",
+        "",
+        "",
       ],
     },
     {
-      name: "Maggie",
-      icon: <ScrollText size={20} />,
+      name: "Mobile",
+      icon: <Smartphone size={20} />,
       images: [
-        "https://ik.imagekit.io/greenstore/Food%20Image/matar-paneer.jpg",
-        "https://ik.imagekit.io/greenstore/Food%20Image/main.jpg",
+        "",
+        "",
       ],
     },
     {
-      name: "Beverages",
+      name: "Kitchen",
       icon: <Coffee size={20} />,
       images: [
-        "https://images.pexels.com/photos/302899/pexels-photo-302899.jpeg",
-        "https://ik.imagekit.io/greenstore/Food%20Image/roti.jpg",
+        "",
+        "",
       ],
     },
     {
-      name: "Desserts",
-      icon: <IceCream size={20} />,
+      name: "New in store",
+      icon: <Sparkle size={20} />,
       images: [
-        "https://ik.imagekit.io/greenstore/Food%20Image/dal-dadka.jpg",
-        "https://ik.imagekit.io/greenstore/Food%20Image/chole.jpg",
+        "",
+        "",
       ],
     },
   ];

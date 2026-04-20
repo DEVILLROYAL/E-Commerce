@@ -24,14 +24,14 @@ return (
 
 
 <h2 className="text-4xl font-bold mt-4 leading-tight">
-Fresh & Local Food
+Brends & Trends
 <span className="text-green-400"> Delivered to Your Home</span>
 </h2>
 
 
 <p className="text-black mt-3 text">
-We partner with street vendors, local kitchens, and home-style cooks.
-Get samosa, kachori, chowmein, thali, biryani — sab kuch!
+We partner with street artist, local creators, and home-style cooks.
+Get electronics, fashion, stationary, gadgets — sab kuch!
 </p>
 
 
@@ -44,7 +44,7 @@ Get samosa, kachori, chowmein, thali, biryani — sab kuch!
 
 <motion.div initial={{ opacity: 0, scale: 0.9 }} animate={{ opacity: 1, scale: 1 }}>
 <div className="rounded-3xl overflow-hidden border border-green-500/30 shadow-xl">
-<img src="https://images.pexels.com/photos/12737656/pexels-photo-12737656.jpeg" className="w-full h-80 object-cover" />
+<img src="#" className="w-full h-80 object-cover" />
 </div>
 </motion.div>
 </section>
