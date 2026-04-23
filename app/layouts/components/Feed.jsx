@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react"; 
 import { useRouter } from "next/navigation";
+import { div } from "framer-motion/client";
 
 export default function ProductFeed() {
   const [products, setProducts] = useState([]);
@@ -37,6 +38,10 @@ export default function ProductFeed() {
     );
 
   return (
+    <>
+      <div className="w-full p-5 flex justify-center items-center font-bold">
+        <h1>Best Offers for you</h1>
+      </div>
     <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 p-5">
       {products.map((product) => (
         <div
@@ -81,5 +86,6 @@ export default function ProductFeed() {
         </div>
       ))}
     </div>
+    </>
   );
 }

@@ -21,3 +21,6 @@
 .fade-image-2 {
   animation: fadeSlide 15s infinite 10s;
 }
+.input {
+  @apply border p-2 rounded-lg w-full;
+}

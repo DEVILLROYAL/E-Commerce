@@ -2,10 +2,17 @@
 
 import { CircleUser, LightbulbIcon, LogOutIcon, SettingsIcon, ShoppingCart, UserCircle } from "lucide-react"
 import { useState, useRef, useEffect, } from "react";
+import { useRouter } from "next/navigation";
 
 export default function Profile() {
   const [ isOpen, setIsOpen ] = useState(false);
   const menuRef = useRef();
+
+  const Router = useRouter();
+
+  const profileOnClick = (slug) => {
+    Router.push(`/profile`);
+  }; 
 
   useEffect(()=> {
     const handleClickOutside = (event) => {
@@ -25,8 +32,10 @@ export default function Profile() {
      {isOpen && (<div id="profile" className="border border-black rounded-xl bg-white z-50 absolute right-5 top-16 h-max w-[200px]">
       <div className="flex flex-col">
         <div className="border-b flex gap-5 p-3">
-          <UserCircle/>
+          <button className="w-full h-full flex gap-5 items-center" onClick={profileOnClick}>
+            <UserCircle/>
           <h1>UserName</h1>
+          </button>
         </div>
         <div className="flex gap-5 p-3" >
           <LightbulbIcon/>

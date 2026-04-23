@@ -82,7 +82,7 @@ export default function FoodRadioSlider() {
   });
 
   return (
-    <div className="w-full mt-12 space-y-6">
+    <div className="w-full mt-12 space-y-6 p-5">
       {/* Horizontal Scroll Category Bar */}
       <div className="flex overflow-x-auto gap-4irebase md:justify-evenly gap-5 scrollbar-hide px-2 py-3">
         {categories.map((cat, i) => (

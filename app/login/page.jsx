@@ -1,0 +1,1 @@
+"create a different page for both login and logout" //
