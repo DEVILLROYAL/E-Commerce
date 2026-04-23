@@ -2,7 +2,9 @@ import Image from "next/image";
 import { Star, ShoppingCart } from "lucide-react";
 
 export default async function ProductPage({ params }) {
-  const { slug } = params;
+
+  const resolvedParams = await params; // 👈 fix
+  const { slug } = resolvedParams;
 
   const url = `https://fakestoreapi.com/products/${slug}`;
   const data = await fetch(url);
@@ -18,13 +20,12 @@ export default async function ProductPage({ params }) {
     <div className="w-full xl:flex p-5 gap-5">
       {/* Image */}
       <div className="w-full xl:w-1/2 p-5 xl:p-16 flex justify-center">
-        <Image
+        <img
           src={res.image}
           alt={res.title}
           width={300}
           height={300}
-          className="object-contain"
-        />
+          className="object-contain" />
       </div>
 
       {/* Details */}

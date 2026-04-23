@@ -22,7 +22,7 @@ export default function ProductFeed() {
   }
 
   const productOnClick = (slug) => {
-    Router.push(`/product`);
+    Router.push(`/product/${slug}`);
   }
 
   useEffect(() => {
