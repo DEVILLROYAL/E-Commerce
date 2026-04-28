@@ -27,7 +27,7 @@ export default function SigninPage() {
     if (res.error) {
       alert("Invalid email or password");
     } else {
-      router.push("/profile");
+      router.push("/login");
     }
   };
 

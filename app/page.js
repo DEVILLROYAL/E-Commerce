@@ -1,14 +1,11 @@
-import FoodRadioSlider from "./layouts/components/FoodRadioSlider";
-import { Hero } from "./layouts/components/Hero";
-import ProductList from "./layouts/components/ProductList";
-import Feed from "./layouts/components/Feed";
+import React from 'react'
+import HomePage from './Home'
 
-export default async function Home() {
+export default function page() {
   return (
     <>
-    <Hero/>
-    <FoodRadioSlider/>
-    <Feed/>
+    <HomePage/>
+    
     </>
-  );
+  )
 }

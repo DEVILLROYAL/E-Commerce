@@ -16,6 +16,7 @@ export default function SignupPage() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    console.log("FORM DATA:", form);
     setLoading(true);
 
   const res = await fetch("/api/register", {
@@ -28,8 +29,13 @@ export default function SignupPage() {
 
 let data;
 
+console.group(data);
+
 try {
   data = await res.json();
+  if( data == true ){
+    router.push('./signin');
+  }
 } catch (err) {
   console.error("Invalid JSON response");
   return alert("Server error");
