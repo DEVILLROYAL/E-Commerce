@@ -6,14 +6,36 @@ export default async function ProductPage({ params }) {
   const resolvedParams = await params; // 👈 fix
   const { slug } = resolvedParams;
 
-  const url = `https://fakestoreapi.com/products/${slug}`;
-  const data = await fetch(url);
-
-  if (!data.ok) {
-    throw new Error("Failed to fetch product");
+ if (!slug || isNaN(Number(slug))) {
+    return <div>Invalid product ID</div>;
   }
 
-  const res = await data.json();
+  const url = `https://fakestoreapi.com/products/${slug}`;
+
+  let res;
+
+  try {
+    const response = await fetch(url, {
+      cache: "no-store",
+    });
+
+    if (!response.ok) {
+      throw new Error("API response not OK");
+    }
+
+    const text = await response.text();
+
+    // ✅ prevent JSON crash
+    if (!text) {
+      throw new Error("Empty response");
+    }
+
+    res = JSON.parse(text);
+
+  } catch (error) {
+    console.error("Fetch error:", error);
+    return <div>Product failed to load</div>;
+  }
   const rate = 83.5;
 
   return (
