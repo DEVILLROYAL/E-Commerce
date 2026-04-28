@@ -2,7 +2,6 @@
 
 import { useEffect, useState } from "react"; 
 import { useRouter } from "next/navigation";
-import { div } from "framer-motion/client";
 
 export default function ProductFeed() {
   const [products, setProducts] = useState([]);
