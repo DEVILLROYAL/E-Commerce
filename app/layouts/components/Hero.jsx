@@ -44,7 +44,7 @@ Get electronics, fashion, stationary, gadgets — sab kuch!
 
 <motion.div initial={{ opacity: 0, scale: 0.9 }} animate={{ opacity: 1, scale: 1 }}>
 <div className="rounded-3xl overflow-hidden border border-green-500/30 shadow-xl">
-<img src="https://lh3.googleusercontent.com/gg-dl/AFfU-fKn3Xv1kDP3LCf0tu3zZ8xBZRHOqNyAQf-DBcmth3W_shSBR11dkwZr1Fef-6cMEPQDrs5cdhai9clE9rw5AXblqbzRBgfZ90Wh2sUCKeTWU2mlJCU4cp91mVXtGyEnTZKy0JVlguz20MkZmRTTqQTQDmVCZDRL27Xllw0L1o1aYsJQeg=s1024-rj" className="w-full h-80 object-cover" />
+<img src="https://rukminim1.flixcart.com/fk-p-flap/3200/1560/image/1d49f845c25cb9be.png?q=60" className="w-full h-80 object-cover" />
 </div>
 </motion.div>
 </section>

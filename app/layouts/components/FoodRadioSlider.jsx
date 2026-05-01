@@ -18,40 +18,40 @@ export default function FoodRadioSlider() {
       name: "Fashion",
       icon: <Shirt size={20} />,
       images: [
-        "#",
-        "#",
+        "https://rukminim1.flixcart.com/fk-p-flap/3200/1560/image/f9defbd59ae4a295.png?q=60",
+        "https://rukminim1.flixcart.com/fk-p-flap/3200/1560/image/1cb2fd3322359aad.png?q=60",
       ],
     },
     {
       name: "Home",
       icon: <Sofa size={20} />,
       images: [
-        "",
-        "",
+        "https://rukminim1.flixcart.com/fk-p-flap/3200/1560/image/4ddf9521903b67a1.jpg?q=60",
+        "https://rukminim1.flixcart.com/fk-p-flap/3200/1560/image/4ddf9521903b67a1.jpg?q=60",
       ],
     },
     {
       name: "Mobile",
       icon: <Smartphone size={20} />,
       images: [
-        "",
-        "",
+        "https://rukminim1.flixcart.com/fk-p-flap/3200/1560/image/61baa83c3d1bc87c.png?q=60",
+        "https://rukminim1.flixcart.com/fk-p-flap/3200/1560/image/2b5360ee1d200bdc.png?q=60",
       ],
     },
     {
       name: "Kitchen",
       icon: <Coffee size={20} />,
       images: [
-        "",
-        "",
+        "https://rukminim1.flixcart.com/fk-p-flap/3200/1560/image/51de2bc9551a05ce.jpg?q=60",
+        "https://rukminim1.flixcart.com/fk-p-flap/3200/1560/image/5374967633319aa6.png?q=60",
       ],
     },
     {
       name: "New in store",
       icon: <Sparkle size={20} />,
       images: [
-        "",
-        "",
+        "https://rukminim1.flixcart.com/fk-p-flap/3200/1560/image/00a54028bd17ec3a.jpg?q=60",
+        "https://rukminim1.flixcart.com/fk-p-flap/3200/1560/image/5374967633319aa6.png?q=60",
       ],
     },
   ];
